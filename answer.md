@@ -23,3 +23,12 @@ In-memory Cache อยู่เฉพาะในแต่ละ Instance เม
 Deprecation = API เวอร์ชันเก่ากำลังจะเลิกใช้ และต้องการให้ผู้ใช้ย้ายไปใช้เวอร์ชันใหม่
 
 ไม่ควรลบ API เก่าทันที แต่ควรประกาศ Deprecated สร้างเวอร์ชันใหม่ ให้เวลา Client ย้ายระบบ แล้วจึงยุติการรองรับเวอร์ชันเก่า
+
+หัวข้อ จำว่า
+SQL Injection ผู้ใช้แทรก SQL ผ่าน Input
+Allowlist อนุญาตเฉพาะค่าที่กำหนดไว้
+Transaction หลายคำสั่งต้องสำเร็จทั้งหมด หรือ Rollback ทั้งหมด
+In-memory Cache Cache อยู่ใน Server แต่ละตัว
+Multi-instance หลาย Server → In-memory ไม่แชร์กัน
+Redis Cache กลางที่หลาย Server ใช้ร่วมกันได้
+API Deprecation API เก่ากำลังเลิกใช้ ต้องให้เวลาเปลี่ยนไป API ใหม่
